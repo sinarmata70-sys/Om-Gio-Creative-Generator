@@ -1,0 +1,457 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "email": "lensx619@gmail.com",
+      "name": "Admin Utama (Lens X)",
+      "role": "admin",
+      "plan": "lifetime_pro",
+      "lynkid": "LYNK-ADMIN-01",
+      "activatedAt": "2026-09-01T10:00:00.000Z",
+      "source": "manual_admin",
+      "status": "active",
+      "notes": "Super Admin Creator"
+    },
+    {
+      "id": "usr-admin-2",
+      "email": "sinarmata70@gmail.com",
+      "name": "Sinarmata (App Owner)",
+      "role": "admin",
+      "plan": "lifetime_pro",
+      "lynkid": "LYNK-OWNER-02",
+      "activatedAt": "2026-09-20T08:30:00.000Z",
+      "source": "manual_admin",
+      "status": "active",
+      "notes": "AI Studio Workspace Owner"
+    },
+    {
+      "id": "usr-budi-kreatif",
+      "email": "pembeli.kreatif@gmail.com",
+      "name": "Budi Kreatif",
+      "role": "user",
+      "plan": "lifetime_pro",
+      "lynkid": "LYNK-882194",
+      "activatedAt": "2026-09-28T14:22:10.000Z",
+      "source": "lynk",
+      "status": "active",
+      "notes": "Order Lynk.id #882194"
+    },
+    {
+      "id": "usr-siti-rahma",
+      "email": "siti.ugc@gmail.com",
+      "name": "Siti Rahma",
+      "role": "user",
+      "plan": "lifetime_pro",
+      "lynkid": "LYNK-994102",
+      "activatedAt": "2026-09-28T16:05:44.000Z",
+      "source": "lynk",
+      "status": "active",
+      "notes": "Order Lynk.id #994102"
+    },
+    {
+      "id": "usr-edi-widi",
+      "email": "yondoli157@gmail.com",
+      "name": "Edi Widiyantoro",
+      "role": "user",
+      "plan": "lifetime_pro",
+      "lynkid": "LYNK-PENDING-157",
+      "activatedAt": "2026-09-29T18:49:44.823Z",
+      "source": "lynk",
+      "status": "active",
+      "notes": "Akun baru menunggu aktivasi lisensi"
+    },
+    {
+      "id": "usr-1790707390683-7812",
+      "email": "pembeli.baru@gmail.com",
+      "name": "Rian Sutrisno",
+      "role": "user",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "source": "lynk_webhook",
+      "lynkid": "ORD-LYNK-778899",
+      "activatedAt": "2026-09-29T18:43:10.683Z"
+    },
+    {
+      "id": "usr-1790707399251-92np",
+      "email": "another.buyer@gmail.com",
+      "name": "Sari",
+      "role": "user",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "source": "url_token",
+      "lynkid": "ORD-991122",
+      "activatedAt": "2026-09-29T18:43:19.251Z"
+    }
+  ],
+  "transactions": [
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149000,
+      "currency": "IDR",
+      "status": "success",
+      "paymentMethod": "lynk",
+      "paymentCode": "LYNK-355518",
+      "refCode": "CLAIM-SELF-SERVICE",
+      "id": "TRX-1790707784823-268",
+      "createdAt": "2026-09-29T18:49:44.823Z",
+      "completedAt": "2026-09-29T18:49:44.823Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149256,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-427475",
+      "refCode": "UNIQUE-256",
+      "id": "TRX-1790707427475-780",
+      "createdAt": "2026-09-29T18:43:47.475Z"
+    },
+    {
+      "customerEmail": "another.buyer@gmail.com",
+      "customerName": "Sari",
+      "amount": 149000,
+      "currency": "IDR",
+      "status": "success",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORD-991122",
+      "refCode": "ORD-991122",
+      "id": "TRX-1790707399251-355",
+      "createdAt": "2026-09-29T18:43:19.251Z",
+      "completedAt": "2026-09-29T18:43:19.251Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149733,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-394597",
+      "refCode": "UNIQUE-733",
+      "id": "TRX-1790707394597-700",
+      "createdAt": "2026-09-29T18:43:14.597Z"
+    },
+    {
+      "customerEmail": "pembeli.baru@gmail.com",
+      "customerName": "Rian Sutrisno",
+      "amount": 149000,
+      "currency": "IDR",
+      "status": "success",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORD-LYNK-778899",
+      "refCode": "WEBHOOK-0683",
+      "id": "TRX-1790707390683-821",
+      "createdAt": "2026-09-29T18:43:10.683Z",
+      "completedAt": "2026-09-29T18:43:10.683Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149949,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-352347",
+      "refCode": "UNIQUE-949",
+      "id": "TRX-1790707352347-573",
+      "createdAt": "2026-09-29T18:42:32.347Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149505,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-180567",
+      "refCode": "UNIQUE-505",
+      "id": "TRX-1790707180567-327",
+      "createdAt": "2026-09-29T18:39:40.567Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149777,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-174692",
+      "refCode": "UNIQUE-777",
+      "id": "TRX-1790707174692-928",
+      "createdAt": "2026-09-29T18:39:34.692Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149607,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-071454",
+      "refCode": "UNIQUE-607",
+      "id": "TRX-1790707071454-341",
+      "createdAt": "2026-09-29T18:37:51.454Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149547,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-052480",
+      "refCode": "UNIQUE-547",
+      "id": "TRX-1790707052480-452",
+      "createdAt": "2026-09-29T18:37:32.480Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149894,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-013632",
+      "refCode": "UNIQUE-894",
+      "id": "TRX-1790702013632-114",
+      "createdAt": "2026-09-29T17:13:33.632Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149609,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-111920",
+      "refCode": "UNIQUE-609",
+      "id": "TRX-1790701111920-963",
+      "createdAt": "2026-09-29T16:58:31.920Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149875,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-049714",
+      "refCode": "UNIQUE-875",
+      "id": "TRX-1790701049714-557",
+      "createdAt": "2026-09-29T16:57:29.714Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149155,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-880001",
+      "refCode": "UNIQUE-155",
+      "id": "TRX-1790700880001-219",
+      "createdAt": "2026-09-29T16:54:40.001Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149618,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-758119",
+      "refCode": "UNIQUE-618",
+      "id": "TRX-1790700758119-961",
+      "createdAt": "2026-09-29T16:52:38.119Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149573,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-732220",
+      "refCode": "UNIQUE-573",
+      "id": "TRX-1790700732220-251",
+      "createdAt": "2026-09-29T16:52:12.220Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149253,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "bank",
+      "paymentCode": "ORDER-692120",
+      "refCode": "UNIQUE-253",
+      "id": "TRX-1790700692120-272",
+      "createdAt": "2026-09-29T16:51:32.120Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149276,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "qris",
+      "paymentCode": "ORDER-670679",
+      "refCode": "UNIQUE-276",
+      "id": "TRX-1790700670679-741",
+      "createdAt": "2026-09-29T16:51:10.679Z"
+    },
+    {
+      "customerEmail": "yondoli157@gmail.com",
+      "customerName": "Edi Widiyantoro",
+      "amount": 149547,
+      "currency": "IDR",
+      "status": "pending",
+      "paymentMethod": "lynk",
+      "paymentCode": "ORDER-504689",
+      "refCode": "UNIQUE-547",
+      "id": "TRX-1790700504689-734",
+      "createdAt": "2026-09-29T16:48:24.689Z"
+    },
+    {
+      "id": "TRX-LYNK-882194",
+      "customerEmail": "pembeli.kreatif@gmail.com",
+      "customerName": "Budi Kreatif",
+      "amount": 149000,
+      "currency": "IDR",
+      "status": "success",
+      "paymentMethod": "lynk",
+      "paymentCode": "LYNK-882194",
+      "createdAt": "2026-09-28T14:20:00.000Z",
+      "completedAt": "2026-09-28T14:22:10.000Z"
+    },
+    {
+      "id": "TRX-LYNK-994102",
+      "customerEmail": "siti.ugc@gmail.com",
+      "customerName": "Siti Rahma",
+      "amount": 149000,
+      "currency": "IDR",
+      "status": "success",
+      "paymentMethod": "lynk",
+      "paymentCode": "LYNK-994102",
+      "createdAt": "2026-09-28T16:00:00.000Z",
+      "completedAt": "2026-09-28T16:05:44.000Z"
+    }
+  ],
+  "licenseKeys": [
+    {
+      "id": "lic-1",
+      "code": "PRO-LYNK-VIP-2026",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "lic-2",
+      "code": "ALIM-DIRECTOR-LIFETIME",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "lic-3",
+      "code": "V11-MASTER-ACCESS-77",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    },
+    {
+      "id": "lic-4",
+      "code": "LYNK-CREATIVE-9921",
+      "plan": "lifetime_pro",
+      "status": "active",
+      "createdAt": "2026-09-20T00:00:00.000Z"
+    }
+  ],
+  "conceptHistory": [
+    {
+      "id": "cpt-1790711345656",
+      "createdAt": "2026-09-29T19:49:05.656Z",
+      "title": "Solusi Praktis: Transformasi Hidup dalam 32 Detik",
+      "mode": "ad",
+      "adFormat": "ad-hook-proof-offer",
+      "engine": "All Generator Video",
+      "duration": "32s",
+      "aspectRatio": "9:16",
+      "summary": "Konsep iklan ini menggunakan teknik 'Contrast-Transformation' untuk mengatasi masalah audiens (frustrasi dengan kerumitan) dengan menunjukkan solusi instan dari produk [product.jpg]. Target emosi adalah 'Relief' (lega) dan 'Aspiration' (keinginan untuk gaya hidup lebih baik). Visual menggunakan tone sinematik, pencahayaan hangat, dan transisi mulus untuk menjaga retensi penonton.",
+      "panelsCount": 16,
+      "masterStoryboardPrompt": "Panel 1-4 (0-8s): [Shot 1] Close-up [creator.png] wajah tampak lelah, pencahayaan dingin (blue tint), memegang dahi. SFX: Suara detak jam lambat. VO: 'Lelah dengan rutinitas yang bikin ribet?'. Panel 5-8 (8-16s): [Shot 2] [creator.png] menemukan [product.jpg] di atas meja. Pencahayaan berubah menjadi hangat (golden hour). SFX: Suara 'ding' magis. VO: 'Saatnya upgrade cara kamu dengan yang satu ini.' Panel 9-12 (16-24s): [Shot 3] Extreme close-up [product.jpg] digunakan dengan gerakan tangan elegan. Fokus pada tekstur/detail kemasan. SFX: Suara tekstur premium/klik. VO: 'Praktis, elegan, dan pastinya efisien banget.' Panel 13-16 (24-32s): [Shot 4] [creator.png] tersenyum puas, memegang [product.jpg] di depan kamera, latar belakang blurred kota modern. SFX: Musik upbeat inspiratif. VO: 'Solusi cerdas untuk hidupmu. Klik link di bio sekarang!'",
+      "storyboardPanels": [],
+      "masterVideoPrompt": "Cinematic 9:16 aspect ratio video, high-end commercial quality. Shot 1: [creator.png] looking stressed in a dimly lit, cool-toned room, blue lighting. Shot 2: Transition to warm, golden hour lighting, [creator.png] discovers [product.jpg] on a minimalist desk. Shot 3: Macro close-up of [product.jpg] being interacted with, sharp details, premium textures, soft bokeh background. Shot 4: [creator.png] smiling confidently holding [product.jpg], bright modern urban background, high-key cinematic lighting. Smooth transitions, 4k, photorealistic, professional color grading, seamless continuity between shots.",
+      "socialPackage": {
+        "tiktok": "Hook: Capek ribet tiap hari? 😩 Cek ini! | Caption: Akhirnya nemu solusi yang bikin hidup jadi 10x lebih gampang. Gak perlu drama lagi, langsung checkout di link bio ya! #SolusiPraktis #LifeHack",
+        "instagram": "Hook: Stop buang-buang waktu dengan cara lama! 🛑 | Caption: Transformasi hidupmu mulai dari hal kecil. Kenalan sama [product.jpg], partner terbaik buat produktivitas kamu. Tap link di bio untuk harga spesial hari ini!",
+        "facebook": "Hook: Solusi cerdas untuk kamu yang sibuk! 💡 | Caption: Ingin hasil maksimal tanpa harus ribet? [product.jpg] hadir sebagai jawaban. Dapatkan penawaran terbatas khusus pengikut kami hari ini. Klik tombol di bawah!",
+        "threads": "Pernah nggak sih ngerasa hidup makin ribet? Akhirnya nemu [product.jpg] yang beneran ngubah cara kerja gue. Worth it banget sih ini. Ada yang udah coba?",
+        "x": "Capek ribet? Gue baru nemu [product.jpg] yang bikin hari-hari lebih efisien. Solusi praktis buat yang sibuk. Cek di sini: [link] #LifeHacks #ProductReview",
+        "youtube": "Judul: Rahasia Hidup Lebih Praktis & Elegan! | Deskripsi: Sering merasa kewalahan? Tonton video ini sampai habis untuk tahu rahasia produktivitas terbaru dengan [product.jpg].",
+        "pinterest": "Tingkatkan produktivitas harianmu dengan [product.jpg]. Desain elegan, solusi praktis untuk gaya hidup modern. Klik untuk detail!",
+        "hashtags": [
+          "#SolusiPraktis",
+          "#LifeHackIndonesia",
+          "#ModernLifestyle",
+          "#Produktivitas",
+          "#SolusiCerdas"
+        ],
+        "suggestedAudio": "Lo-fi beat yang bertransisi menjadi upbeat pop-electronic saat transisi ke Shot 2."
+      }
+    },
+    {
+      "id": "cpt-1790710351666",
+      "createdAt": "2026-09-29T19:32:31.666Z",
+      "title": "Solusi Praktis: Kualitas Premium dalam Genggaman",
+      "mode": "ad",
+      "adFormat": "ad-hook-proof-offer",
+      "engine": "All Generator Video",
+      "duration": "32s",
+      "aspectRatio": "9:16",
+      "summary": "Konsep iklan ini menggunakan teknik 'problem-to-solution' untuk audiens Indonesia. Menggunakan pencahayaan sinematik dan transisi halus untuk menonjolkan produk sebagai jawaban atas kesibukan sehari-hari, menciptakan kesan prestisius namun sangat fungsional.",
+      "panelsCount": 16,
+      "masterStoryboardPrompt": "Panel 1-4 (0-8s): Shot 1 - Close up [creator.png] wajah tampak lelah namun elegan, lighting hangat. SFX: Suara jam berdetak pelan. VO: 'Lelah dengan rutinitas yang nggak ada habisnya?'. Panel 5-8 (8-16s): Shot 2 - Transisi zoom cepat ke [product.jpg] di atas meja marmer. Cahaya alami masuk jendela. SFX: Suara denting lembut. VO: 'Tenang, ada cara cerdas untuk tetap tampil maksimal setiap saat.'. Panel 9-12 (16-24s): Shot 3 - [creator.png] menggunakan [product.jpg] dengan gerakan halus. Fokus pada detail tekstur produk. SFX: Suara klik produk. VO: 'Desain elegan, fungsi maksimal, solusi yang kamu cari.'. Panel 13-16 (24-32s): Shot 4 - Wide shot [creator.png] tersenyum percaya diri memegang [product.jpg]. Fade out ke logo. SFX: Musik upbeat inspiratif. VO: 'Upgrade gaya hidupmu sekarang. Klik link di bio.'",
+      "storyboardPanels": [],
+      "masterVideoPrompt": "Cinematic 9:16 commercial video, high-end production quality. Sequence: 1. Close-up of [creator.png] looking exhausted in a soft-lit modern apartment. 2. Rapid zoom transition to [product.jpg] placed on a marble surface, sharp focus, natural daylight. 3. [creator.png] interacting with [product.jpg], focus on the product's premium texture and design. 4. Wide shot of [creator.png] smiling confidently holding [product.jpg] in a bright, urban setting. Color grade: Warm, elegant, high-contrast, 4k resolution, smooth motion, professional lighting.",
+      "socialPackage": {
+        "tiktok": "Hook: Capek sama rutinitas yang bikin ribet? 😩 Cek ini deh! Bukti nyata kalau tampil elegan itu nggak harus susah. Cek link di bio untuk penawaran spesial! #SolusiPraktis #UpgradeGaya",
+        "instagram": "Hook: Rahasia tampil maksimal tanpa ribet akhirnya terungkap! ✨ Intip bagaimana produk ini jadi penyelamat hari-harimu. Klik link di bio untuk info lengkap! #PremiumLifestyle #DailyEssentials",
+        "facebook": "Hook: Capek dengan solusi yang cuma janji manis? Saatnya beralih ke yang pasti-pasti saja. Produk ini dirancang khusus untuk kamu yang mementingkan kualitas dan efisiensi. Dapatkan sekarang dengan promo terbatas!",
+        "threads": "Terkadang yang kamu butuhkan cuma satu barang yang tepat untuk bikin hari jadi lebih mudah. Ada yang sudah coba ini? worth it banget!",
+        "x": "Capek ribet tiap hari? Solusi praktis dan elegan sudah ada di depan mata. Cek videonya! [Link] #LifeHack #PremiumProduct",
+        "youtube": "Judul: Rahasia Tampil Maksimal Setiap Hari! | Deskripsi: Ingin tahu cara upgrade gaya hidupmu dengan mudah? Simak video singkat ini sampai habis.",
+        "pinterest": "Solusi praktis untuk gaya hidup modern. Desain premium yang bikin kamu selalu tampil percaya diri. Klik untuk detail produk.",
+        "hashtags": [
+          "#SolusiPraktis",
+          "#PremiumLifestyle",
+          "#UpgradeDiri",
+          "#InovasiModern",
+          "#DailyEssentials"
+        ],
+        "suggestedAudio": "Lo-fi beats dengan nuansa uplifting atau trending synth-pop yang elegan."
+      }
+    }
+  ],
+  "settings": {
+    "adminEmail": "lensx619@gmail.com",
+    "lynkCheckoutUrl": "https://lynk.id/creative/pro-lifetime",
+    "qrisMerchantName": "OM GIO CREATIVE PRO",
+    "qrisNmid": "ID1020083921029",
+    "priceIDR": 149000,
+    "discountPriceIDR": 299000,
+    "bankAccount": {
+      "bank": "BCA (Bank Central Asia)",
+      "accountNumber": "8830-192-3021",
+      "accountHolder": "OM GIO CREATIVE MEDIA"
+    },
+    "autoApproveLynk": true
+  },
+  "stats": {
+    "totalGenerations": 26,
+    "lastUpdated": "2026-09-29T19:49:05.656Z"
+  }
+}

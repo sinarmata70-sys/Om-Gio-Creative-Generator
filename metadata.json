@@ -1,0 +1,6 @@
+{
+  "name": "Al-im Creative Director",
+  "description": "AI untuk Membuat Konsep Iklan & Konten Video dari reference, ide, storytelling, storyboard 4:3, master video prompt lintas generator, dan lisensi terintegrasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
