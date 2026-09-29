@@ -35,9 +35,13 @@ export const LiveOutputPreview: React.FC<LiveOutputPreviewProps> = ({
     setTimeout(() => setCopiedSection(null), 2000);
   };
 
-  const openExternalChatbot = (service: 'chatgpt' | 'gemini' | 'dola', text: string) => {
+  const openExternalChatbot = (service: 'chatgpt' | 'gemini' | 'dola', text: string, type: 'storyboard' | 'video' = 'storyboard') => {
     if (!text) return;
-    const encoded = encodeURIComponent(text);
+    let formattedText = text;
+    if (type === 'storyboard') {
+      formattedText = `Tolong buatkan gambar visual storyboard 4:3 sinematik (grid multi-panel visual) untuk konsep iklan berikut:\n\n${text}\n\nSpesifikasi: Format 4:3 ratio, Cinematic commercial studio lighting, 4K photorealistic, konsisten dengan detail produk dan karakter.`;
+    }
+    const encoded = encodeURIComponent(formattedText);
     let url = '';
     if (service === 'chatgpt') {
       url = `https://chat.openai.com/?q=${encoded}`;
@@ -55,6 +59,12 @@ export const LiveOutputPreview: React.FC<LiveOutputPreviewProps> = ({
       link.click();
       document.body.removeChild(link);
     }
+  };
+
+  const copyImagePrompt = () => {
+    if (!concept?.masterStoryboardPrompt) return;
+    const imagePrompt = `[IMAGE GENERATION PROMPT — 4:3 COMMERCIAL STORYBOARD]:\nCreate a 4-panel cinematic 4:3 commercial storyboard grid showing sequence:\n${concept.masterStoryboardPrompt}\n\nStyle: Cinematic advertising, 4:3 aspect ratio, studio lighting, photorealistic, 4k, hyper-detailed product textures and continuous character identity.`;
+    handleCopy(imagePrompt, 'imagePrompt');
   };
 
   const copyCaraPakai = () => {
@@ -136,31 +146,43 @@ export const LiveOutputPreview: React.FC<LiveOutputPreviewProps> = ({
             <span>01 • MASTER STORYBOARD PROMPT — 4:3 — {duration.toUpperCase()}</span>
           </div>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 flex-wrap">
             <button
               onClick={() => handleCopy(concept?.masterStoryboardPrompt || '', 'box1')}
               disabled={!concept}
               className="px-2 py-1 rounded bg-[#14141a] hover:bg-neutral-800 text-amber-200 text-[10px] font-semibold flex items-center gap-1 transition-colors cursor-pointer disabled:opacity-40 border border-amber-500/25"
+              title="Copy Teks Naskah Storyboard"
             >
               {copiedSection === 'box1' ? <Check className="w-3 h-3 text-amber-400" /> : <Copy className="w-3 h-3 text-amber-400" />}
-              <span>{copiedSection === 'box1' ? 'Tersalin' : 'Copy'}</span>
+              <span>{copiedSection === 'box1' ? 'Tersalin' : 'Copy Teks'}</span>
             </button>
             <button
-              onClick={() => openExternalChatbot('chatgpt', concept?.masterStoryboardPrompt || '')}
+              onClick={copyImagePrompt}
+              disabled={!concept}
+              className="px-2 py-1 rounded bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 text-[10px] font-bold flex items-center gap-1 transition-colors cursor-pointer disabled:opacity-40 border border-amber-500/40"
+              title="Salin Prompt Khusus Generator Gambar (DALL-E, Midjourney, Flux)"
+            >
+              {copiedSection === 'imagePrompt' ? <Check className="w-3 h-3 text-amber-400" /> : <Sparkles className="w-3 h-3 text-amber-400" />}
+              <span>{copiedSection === 'imagePrompt' ? 'Prompt Gambar Tersalin!' : 'Copy Prompt Gambar'}</span>
+            </button>
+            <button
+              onClick={() => openExternalChatbot('chatgpt', concept?.masterStoryboardPrompt || '', 'storyboard')}
               disabled={!concept}
               className="px-2 py-1 rounded bg-[#14141a] hover:bg-neutral-800 text-zinc-300 text-[10px] transition-colors cursor-pointer disabled:opacity-40 border border-neutral-800"
+              title="Buka ChatGPT dengan instruksi buat gambar storyboard"
             >
               ChatGPT
             </button>
             <button
-              onClick={() => openExternalChatbot('gemini', concept?.masterStoryboardPrompt || '')}
+              onClick={() => openExternalChatbot('gemini', concept?.masterStoryboardPrompt || '', 'storyboard')}
               disabled={!concept}
               className="px-2 py-1 rounded bg-[#14141a] hover:bg-neutral-800 text-zinc-300 text-[10px] transition-colors cursor-pointer disabled:opacity-40 border border-neutral-800"
+              title="Buka Gemini AI"
             >
               Gemini
             </button>
             <button
-              onClick={() => openExternalChatbot('dola', concept?.masterStoryboardPrompt || '')}
+              onClick={() => openExternalChatbot('dola', concept?.masterStoryboardPrompt || '', 'storyboard')}
               disabled={!concept}
               className="px-2 py-1 rounded bg-[#14141a] hover:bg-neutral-800 text-zinc-300 text-[10px] transition-colors cursor-pointer disabled:opacity-40 border border-neutral-800"
             >
@@ -177,8 +199,18 @@ export const LiveOutputPreview: React.FC<LiveOutputPreviewProps> = ({
             </span>
           )}
         </div>
-        <div className="text-[10px] text-zinc-400">
-          Klik AI untuk membuka chatbot dengan prompt Master Storyboard langsung terisi.
+
+        {/* Helper Note for Generating Storyboard Images */}
+        <div className="p-2.5 rounded-lg bg-amber-500/10 border border-amber-500/25 flex items-start gap-2 text-[11px]">
+          <span className="text-sm shrink-0 mt-0.5">💡</span>
+          <div className="space-y-0.5 text-zinc-300">
+            <div className="font-bold text-amber-300 text-[10.5px]">
+              Cara Merender Gambar Storyboard di ChatGPT / Midjourney:
+            </div>
+            <p className="text-[10px] leading-relaxed text-zinc-400">
+              Saat tombol <strong>ChatGPT</strong> diklik, ChatGPT akan terbuka dengan naskah dan instruksi visual yang sudah terisi di kolom pesan. <strong>Tekan tombol "Kirim / Enter"</strong> di ChatGPT untuk langsung merender gambar storyboard. Atau gunakan tombol <strong>"Copy Prompt Gambar"</strong> untuk ditempel ke Midjourney, Leonardo, atau Ideogram.
+            </p>
+          </div>
         </div>
       </div>
 
